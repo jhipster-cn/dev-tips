@@ -18,7 +18,6 @@ yarn config set  electron_mirror http://cdn.npm.taobao.org/dist/electron/
 
 ---
 
-
 ### 当修改完 generator-jhipster 源码之后，如何使用自己的生成器，而不是已经安装在全局的 generator-jhipster？
 
 假设你已经 `clone generator-jhipster` 的源码到 `~/my-generator-jhipster ` 目录下，并且修改了代码。
@@ -57,3 +56,21 @@ JHipster 在生成项目的时候会询问你是否需要支持国际化：
       "zh-cn"                                                                                           
     ],
 ```
+
+### 如何只生成一个包含前端、服务端的项目？
+
+运行 `yo jhipster:client`  或者 `yo jhipster --skip-client`。
+
+更多参数，参见 `yo jhipster --help`。
+
+参见官方文档 [创建一个应用](https://jhipster.github.io/creating-an-app/#4)
+
+---
+
+###  升级 generator-jhipster  不成功？
+
+目前官方推荐 `yarn global upgrade generator-jhipster` 来升级，但有时候运行之后，使用 `yo jhipster` 还是会显示旧的版本。
+
+这个时候可以尝试一下 `npm install -g generator-jhipster`。
+
+如果还是不行，可以尝试用  `npm uninstall -g  generator-jhipster` 卸载，然后重装。

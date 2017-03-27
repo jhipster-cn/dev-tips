@@ -57,6 +57,8 @@ JHipster 在生成项目的时候会询问你是否需要支持国际化：
     ],
 ```
 
+---
+
 ### 如何只生成一个包含前端、服务端的项目？
 
 运行 `yo jhipster:client`  或者 `yo jhipster --skip-client`。
